@@ -1,0 +1,15 @@
+:root {
+    --border-color : #00000030;
+    --light-blue : #f0fbff;
+    --link-blue : #2e94b9;
+    --text-color : #00000080;
+}
+.light-blue{
+    color: var(--light-blue);
+}
+.link-blue {
+    color: var(--link-blue);
+}
+.text-color {
+    color: var(--text-color);
+}

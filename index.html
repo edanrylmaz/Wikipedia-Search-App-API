@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikipedia Search App</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        body{
+            background: radial-gradient(circle at 12.3% 19.3%, rgb(85, 88, 218) 0%, rgb(95, 209, 249) 100.2%);
+        }
+        form input {
+            width: 440px;
+            border: 2px solid var(--border-color);
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        form > a {
+            left: 0%;
+            right: -100%;
+            transform: translateX(45%);
+        }
+        .result-item {
+            background-color: var(--light-blue);
+            border-radius: 5px;
+            transition: 0.1s;
+        }
+        .result-item:hover {
+            box-shadow: 1px 2px 12px 2px rgba(17,81,140,1);
+            -webkit-box-shadow: 1px 2px 12px 2px rgba(17,81,140,1);
+            -moz-box-shadow: 1px 2px 12px 2px rgba(17,81,140,1);
+        }
+        /* .result-item > a {
+            color: var(--link-blue);
+        } */
+        
+    </style>
+</head>
+<body>
+    <header class="d-flex justify-content-center align-items-center flex-column gap-2 p-4">
+        <img src="assets/img/Wikipedia-logo-v2.svg" alt="" width="150px">
+        <form class="submit-form d-flex align-items-center position-relative">
+            <input type="text" name="" id="input" placeholder="Search" class="p-0-75" autocomplete="off" required autofocus>
+            <a class="position-absolute" href="#"><img src="assets/icon/delete.svg" alt="" width="24px"></a> 
+        </form>
+    </header>
+    <section class="results d-flex flex-column justify-content-center gap-1-5 p-3"> 
+    </section>
+</body>
+<script src="assets/js/main.js"></script>
+</html>
